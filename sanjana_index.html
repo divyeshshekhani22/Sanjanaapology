@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A Little Note for Sanjana 🌷</title>
+  <link rel="stylesheet" href="sanjana_style.css">
+</head>
+
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">✿ a tiny corner of the internet ✿</div>
+    <button id="musicToggle" class="small-button" type="button" aria-pressed="false">♪ Soft Sound: off</button>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <div class="eyebrow">A SINCERE APOLOGY</div>
+      <h1>Hey, <span>Sanjana</span> 🌷</h1>
+      <p class="hero-copy">I made this to say sorry.<br>Please read it once.</p>
+      <button class="primary-button" id="openGarden" type="button">Read it <span>♡</span></button>
+      <div class="tiny-note">take your time 🌷</div>
+      <div class="flower flower-one">✿</div>
+      <div class="flower flower-two">❀</div>
+    </section>
+
+    <section id="garden" class="content-section hidden">
+      <div class="section-heading">
+        <p class="eyebrow">A FEW THINGS I WANT TO SAY</p>
+        <h2>From me to you 💗</h2>
+        <p>Tap any card to read more.</p>
+      </div>
+
+      <div class="reason-grid">
+        <button class="reason-card featured-card" type="button" data-title="I overdid it"
+          data-initial="I texted way too much."
+          data-reveal="I got excited talking to you and didn't notice I was overwhelming you. That's on me, not you.">
+          <div class="card-badge-row">
+            <span class="card-icon">💌</span>
+            <span class="card-badge">FIRST THING ♡</span>
+          </div>
+          <b>I overdid it</b>
+          <small>I texted way too much.</small>
+          <span class="tap-hint">tap to unfold ♡</span>
+        </button>
+
+        <button class="reason-card" type="button" data-title="Your space"
+          data-initial="You needed room, and you were right."
+          data-reveal="Blocking me was a fair call. I should have given you space without being asked.">
+          <span class="card-icon">🌸</span>
+          <b>Your space</b>
+          <small>You needed room, and you were right.</small>
+          <span class="tap-hint">tap to unfold ♡</span>
+        </button>
+
+        <button class="reason-card" type="button" data-title="What I learned"
+          data-initial="Slow down, give space."
+          data-reveal="Now I get that talking more doesn't mean connecting more. I'll keep it balanced.">
+          <span class="card-icon">🦋</span>
+          <b>What I learned</b>
+          <small>Slow down, give space.</small>
+          <span class="tap-hint">tap to unfold ♡</span>
+        </button>
+
+        <button class="reason-card" type="button" data-title="Our talks"
+          data-initial="I really enjoyed them."
+          data-reveal="Those 1-2 days were fun for me. I still remember all our talks 🥹 I remember that you and your roommate are really good friends 💛 and tumhari apni class walo se vibe match nahi hoti 😅 but tum, tumhari friend and her boyfriend are enough for you 🌷 and many more things too 🙂 I just handled it badly.">
+          <span class="card-icon">🌷</span>
+          <b>Our talks</b>
+          <small>I really enjoyed them.</small>
+          <span class="tap-hint">tap to unfold ♡</span>
+        </button>
+
+        <button class="reason-card" type="button" data-title="Just sorry"
+          data-initial="I just wanted to say sorry."
+          data-reveal="That's all this is. Nothing more, nothing less.">
+          <span class="card-icon">✨</span>
+          <b>Just sorry</b>
+          <small>I just wanted to say sorry.</small>
+          <span class="tap-hint">tap to unfold ♡</span>
+        </button>
+      </div>
+
+      <div class="message-card">
+        <div class="letter-top">✉ a note for you</div>
+        <p>Dear Sanjana,</p>
+        <p>I'm sorry for texting you so much. I enjoyed talking to you, but I got carried away and didn't think about how it felt on your side. You were right to want space. I hope you're doing well.</p>
+        <p class="signature">— Divyesh</p>
+      </div>
+    </section>
+
+    <section class="moh-maaya-section card">
+      <div class="moon-emblem" aria-hidden="true">🌙</div>
+      <p class="eyebrow">A LITTLE MORE</p>
+      <h2>What I understand now 🌌</h2>
+
+      <div class="moh-narrative">
+        <p class="moh-highlight"><b>I got carried away, and I'm sorry.</b> You deserved space, and I should have given it.</p>
+      </div>
+
+      <div class="whisper-box">
+        <div class="whisper-header">
+          <span class="whisper-badge">A FEW MORE WORDS</span>
+          <h4>Tap to read 💬</h4>
+          <p>Pick one whenever you like:</p>
+        </div>
+
+        <div class="mood-tabs" role="tablist">
+          <button class="mood-btn active" data-mood="exhausted" type="button">🌙 What happened</button>
+          <button class="mood-btn" data-mood="sharing" type="button">💌 My apology</button>
+          <button class="mood-btn" data-mood="reminder" type="button">🌸 What I'll do differently</button>
+          <button class="mood-btn" data-mood="promise" type="button">✨ Wishing you well</button>
+        </div>
+
+        <div class="whisper-display" id="whisperDisplay">
+          <div class="whisper-bubble">
+            <span class="whisper-sparkle">✦</span>
+            <p id="whisperText">We talked for 1-2 days, I texted too much, and that was my mistake.</p>
+            <div class="whisper-author">— Divyesh ♡</div>
+          </div>
+        </div>
+
+        <div class="starlight-row">
+          <button id="sendStarlightBtn" class="primary-button starlight-button" type="button">
+            Send a little starlight ✨
+          </button>
+          <span id="starlightFeedback" class="starlight-feedback" aria-live="polite">Tap to light up the sky ♡</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-card card" id="finalCard">
+      <div class="bouquet" id="finalBouquet">💐</div>
+      <p class="eyebrow">ONE LAST THING</p>
+      <h2>Can you forgive me? ♡</h2>
+      <p class="final-copy">Thank you for reading this far.</p>
+      <div class="choice-row">
+        <button id="yesButton" class="primary-button" type="button">Yes 💗</button>
+        <button id="shyButton" class="secondary-button" type="button">I'll think about it 🌷</button>
+      </div>
+      <p id="finalReply" class="final-reply" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>made by Divyesh, with a little help from code & lots of care ♡</footer>
+  <script src="sanjana_script.js"></script>
+</body>
+
+</html>
